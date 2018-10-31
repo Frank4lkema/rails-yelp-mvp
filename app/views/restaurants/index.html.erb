@@ -2,7 +2,7 @@
 <h1>Yelp Rip-off</h1>
 
 <h3>The Restaurants</h3>
-<ul>
+<ul class= "rating-list">
   <% @restaurants.each do |restaurant| %>
     <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
   <% end %>
