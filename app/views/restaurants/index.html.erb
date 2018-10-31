@@ -1,0 +1,16 @@
+<div class="container">
+<h1>Yelp Rip-off</h1>
+
+<h3>The Restaurants</h3>
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+  <% end %>
+</ul>
+
+
+<%= link_to "Create a new restaurant", new_restaurant_path, class: "btn btn-primary"  %>
+</div>
+
+
+
